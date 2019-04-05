@@ -14,6 +14,10 @@ In this lab you work with React and the the SharePoint Framework to extend the u
 - [Leveraging Fabric React](./Demos/02-fabricreact)
 - [Dynamic React Components](./Demos/03-dynamic-webpart)
 
+## Watch the Module - Video
+
+This module has been recorded and is available in the SharePoint Development YouTube channel: [SharePoint Framework Training - Using React and Office UI Fabric React Components](https://www.youtube.com/watch?v=TlSGdDZmrTM)
+
 ## Contributors
 
 | Roles                | Author(s)                                               |
