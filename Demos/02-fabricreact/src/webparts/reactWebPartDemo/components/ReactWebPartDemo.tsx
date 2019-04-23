@@ -10,7 +10,7 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
   private _colors: IColor[] = [
     { id: 1, title: 'red' },
     { id: 2, title: 'blue' },
-    { id: 3, title: 'green'' }
+    { id: 3, title: 'green' }
   ];
 
   public render(): React.ReactElement<IReactWebPartDemoProps> {
