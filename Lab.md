@@ -202,26 +202,6 @@ In this exercise, you will update the existing React-based SPFx web part to leve
 
 > This project uses the final project from the previous exercise as the starting point. A copy of the final project from the previous exercise can be found in the **./Demos/01-webpart** folder.
 
-1. Update the project to follow the [recommended guidance from Microsoft when using Fabric React](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/office-ui-fabric-integration#office-ui-fabric-react). This involves removing the reference to the Fabric Core package & changing the existing SCSS reference.
-    1. From the command prompt, execute the following command from the root of your project to remove the Fabric Core package:
-
-        ```shell
-        npm uninstall @microsoft/sp-office-ui-fabric-core --save
-        ```
-
-    1. Open the file **./src/webparts/reactWebPartDemo/components/ReactWebpartDemo.module.scss**.
-    1. Change the first line from...
-
-        ```scss
-        @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
-        ```
-
-        ... to the following:
-
-        ```scss
-        @import '~office-ui-fabric-react/dist/sass/_References.scss';
-        ```
-
 1. Update the existing **ColorList** React component to leverage Fabric React controls.
     1. Open the **./src/webparts/reactWebPartDemo/components/ColorList.tsx** file.
     1. Add the following `import` statements to the top of the file. These will enable adding a DefaultButton and List control to the component:
