@@ -2,10 +2,11 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.7.1",
+    "version": "1.8.2",
     "libraryName": "react-web-part-demo",
-    "libraryId": "541d8ad6-89a1-4857-812f-67cd9c119c9e",
+    "libraryId": "7e179ec1-5927-4373-aa77-b655ecea7a7c",
     "packageManager": "npm",
+    "isDomainIsolated": false,
     "componentType": "webpart"
   }
 }

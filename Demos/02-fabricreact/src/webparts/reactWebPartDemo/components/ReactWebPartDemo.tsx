@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT license.
+
 import * as React from 'react';
 import styles from './ReactWebPartDemo.module.scss';
 import { IReactWebPartDemoProps } from './IReactWebPartDemoProps';
@@ -10,7 +13,7 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
   private _colors: IColor[] = [
     { id: 1, title: 'red' },
     { id: 2, title: 'blue' },
-    { id: 3, title: 'green'' }
+    { id: 3, title: 'green' }
   ];
 
   public render(): React.ReactElement<IReactWebPartDemoProps> {
