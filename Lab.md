@@ -62,6 +62,8 @@ In this exercise you will create a SharePoint Framework client-side web part tha
 
     ![Screenshot of the React WebPart Demo web part](./Images/ex01-testing-03.png)
 
+1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
+
 ### Examine the Web Part code
 
 Before modifying the web part code, take a minute to see how this project differs from a SPFx project that does not utilize React.
@@ -83,8 +85,6 @@ Before modifying the web part code, take a minute to see how this project differ
     Because we are using the TypeScript Extended (***.tsx**) language and syntax, well-formed HTML can be directly returned to the caller. The caller is the React web framework.
 
     This component has a single public property: `description`. This is defined as an interface in the **./src/webparts/reactWebPartDemo/components/IReactWebPartDemoProps.ts** file.
-
-1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
 Now that you understand how a React project is structured, add some data and a child component to the web part.
 
