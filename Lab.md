@@ -36,12 +36,11 @@ In this exercise you will create a SharePoint Framework client-side web part tha
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
+    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: WebPart
     - **What is your Web part name?**: React WebPart Demo
     - **What is your Web part description?**: React WebPart Demo description
     - **Which framework would you like to use?**: React
-
-    ![Result of running the SPFx Yeoman generator](./Images/createProject.png)
 
     After provisioning the folders required for the project, the generator will install all the dependency packages using NPM.
 
@@ -57,11 +56,11 @@ In this exercise you will create a SharePoint Framework client-side web part tha
 
 1. Select the web part icon button to open the list of available web parts:
 
-    ![Screenshot of adding the HelloWorld web part](./Images/ex01-testing-02.png)
+    ![Screenshot of adding the React WebPart Demo web part](./Images/ex01-testing-02.png)
 
-1. Select the **HelloWorld** web part:
+1. Select the **React WebPart Demo** web part:
 
-    ![Screenshot of the HelloWorld web part](./Images/ex01-testing-03.png)
+    ![Screenshot of the React WebPart Demo web part](./Images/ex01-testing-03.png)
 
 ### Examine the Web Part code
 
@@ -84,6 +83,8 @@ Before modifying the web part code, take a minute to see how this project differ
     Because we are using the TypeScript Extended (***.tsx**) language and syntax, well-formed HTML can be directly returned to the caller. The caller is the React web framework.
 
     This component has a single public property: `description`. This is defined as an interface in the **./src/webparts/reactWebPartDemo/components/IReactWebPartDemoProps.ts** file.
+
+1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
 Now that you understand how a React project is structured, add some data and a child component to the web part.
 
