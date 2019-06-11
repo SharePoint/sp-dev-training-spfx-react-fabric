@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "79f37521-573a-4078-95a4-2677eac8cb85",
+  "id": "ec63dca2-d3a2-47a1-a6a2-c37b709cfaf0",
   "alias": "ReactWebPartDemoWebPart",
   "componentType": "WebPart",
 
@@ -12,6 +12,7 @@
   // Components that allow authors to embed arbitrary script code should set this to true.
   // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
   "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
 
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other

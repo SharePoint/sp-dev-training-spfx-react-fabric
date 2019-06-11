@@ -2,9 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "react-web-part-demo-client-side-solution",
-    "id": "541d8ad6-89a1-4857-812f-67cd9c119c9e",
+    "id": "7e179ec1-5927-4373-aa77-b655ecea7a7c",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
   },
   "paths": {
     "zippedPackage": "solution/react-web-part-demo.sppkg"
