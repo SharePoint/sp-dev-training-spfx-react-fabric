@@ -281,7 +281,7 @@ In this exercise, you will update the existing React-based SPFx web part to make
     ![Screenshot of Colors SharePoint list](./Images/ex03-newList.png)
 
 1. Update the SharePoint Framework web part to provide additional inputs to the React component:
-    1. Open the **./src/webparts/reactWebPartDemo/ReactWeBPartDemoWebPart.ts** file.
+    1. Open the **./src/webparts/reactWebPartDemo/ReactWebPartDemoWebPart.ts** file.
     1. Locate the `render()` method, and update the code that creates an instance of the React element. This code will add two additional properties to the React web part: `spHttpClient` & `currentSiteUrl`.
 
         ```tsx
@@ -440,9 +440,9 @@ In this exercise, you will update the existing React-based SPFx web part to make
         gulp serve
         ```
 
-    1. The SharePoint Framework's gulp **serve** task will build the project, start a local web server and launch a browser open to the local SharePoint Workbench.
+    1. The browser will load the local workbench, but you can not use this for testing because there is no SharePoint context in the local workbench. Instead, navigate to the SharePoint Online site where you created the **Colors** list, and load the hosted workbench at **https://[sharepoint-online-site]/_layouts/workbench.aspx**.
 
-    1. Add the web part to the workbench. Notice our list of three colors is rendered up exactly as we would expect.
+    1. Add the web part to the hosted workbench. Notice our list of three colors is rendered up exactly as we would expect.
 
         ![Screenshot of running React web part](./Images/ex02-testing-01.png)
 
