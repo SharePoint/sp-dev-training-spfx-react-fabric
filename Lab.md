@@ -36,12 +36,11 @@ In this exercise you will create a SharePoint Framework client-side web part tha
     - **Which baseline packages do you want to target for your component(s)?**: SharePoint Online only (latest)
     - **Where do you want to place the files?**: Use the current folder
     - **Do you want to allow the tenant admin the choice of being able to deploy the solution to all sites immediately without running any feature deployment or adding apps in sites?**: No
+    - **Will the components in the solution require permissions to access web APIs that are unique and not shared with other components in the tenant?**: No
     - **Which type of client-side component to create?**: WebPart
     - **What is your Web part name?**: React WebPart Demo
     - **What is your Web part description?**: React WebPart Demo description
     - **Which framework would you like to use?**: React
-
-    ![Result of running the SPFx Yeoman generator](./Images/createProject.png)
 
     After provisioning the folders required for the project, the generator will install all the dependency packages using NPM.
 
@@ -57,11 +56,13 @@ In this exercise you will create a SharePoint Framework client-side web part tha
 
 1. Select the web part icon button to open the list of available web parts:
 
-    ![Screenshot of adding the HelloWorld web part](./Images/ex01-testing-02.png)
+    ![Screenshot of adding the React WebPart Demo web part](./Images/ex01-testing-02.png)
 
-1. Select the **HelloWorld** web part:
+1. Select the **React WebPart Demo** web part:
 
-    ![Screenshot of the HelloWorld web part](./Images/ex01-testing-03.png)
+    ![Screenshot of the React WebPart Demo web part](./Images/ex01-testing-03.png)
+
+1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
 ### Examine the Web Part code
 
@@ -201,26 +202,6 @@ In this exercise, you will update the existing React-based SPFx web part to leve
 
 > This project uses the final project from the previous exercise as the starting point. A copy of the final project from the previous exercise can be found in the **./Demos/01-webpart** folder.
 
-1. Update the project to follow the [recommended guidance from Microsoft when using Fabric React](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/office-ui-fabric-integration#office-ui-fabric-react). This involves removing the reference to the Fabric Core package & changing the existing SCSS reference.
-    1. From the command prompt, execute the following command from the root of your project to remove the Fabric Core package:
-
-        ```shell
-        npm uninstall @microsoft/sp-office-ui-fabric-core --save
-        ```
-
-    1. Open the file **./src/webparts/reactWebPartDemo/components/ReactWebpartDemo.module.scss**.
-    1. Change the first line from...
-
-        ```scss
-        @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
-        ```
-
-        ... to the following:
-
-        ```scss
-        @import '~office-ui-fabric-react/dist/sass/_References.scss';
-        ```
-
 1. Update the existing **ColorList** React component to leverage Fabric React controls.
     1. Open the **./src/webparts/reactWebPartDemo/components/ColorList.tsx** file.
     1. Add the following `import` statements to the top of the file. These will enable adding a DefaultButton and List control to the component:
@@ -300,7 +281,7 @@ In this exercise, you will update the existing React-based SPFx web part to make
     ![Screenshot of Colors SharePoint list](./Images/ex03-newList.png)
 
 1. Update the SharePoint Framework web part to provide additional inputs to the React component:
-    1. Open the **./src/webparts/reactWebPartDemo/ReactWeBPartDemoWebPart.ts** file.
+    1. Open the **./src/webparts/reactWebPartDemo/ReactWebPartDemoWebPart.ts** file.
     1. Locate the `render()` method, and update the code that creates an instance of the React element. This code will add two additional properties to the React web part: `spHttpClient` & `currentSiteUrl`.
 
         ```tsx
@@ -459,9 +440,9 @@ In this exercise, you will update the existing React-based SPFx web part to make
         gulp serve
         ```
 
-    1. The SharePoint Framework's gulp **serve** task will build the project, start a local web server and launch a browser open to the local SharePoint Workbench.
+    1. The browser will load the local workbench, but you can not use this for testing because there is no SharePoint context in the local workbench. Instead, navigate to the SharePoint Online site where you created the **Colors** list, and load the hosted workbench at **https://[sharepoint-online-site]/_layouts/workbench.aspx**.
 
-    1. Add the web part to the workbench. Notice our list of three colors is rendered up exactly as we would expect.
+    1. Add the web part to the hosted workbench. Notice our list of three colors is rendered up exactly as we would expect.
 
         ![Screenshot of running React web part](./Images/ex02-testing-01.png)
 

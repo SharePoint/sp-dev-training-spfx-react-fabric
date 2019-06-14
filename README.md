@@ -20,15 +20,17 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Contributors
 
-| Roles                | Author(s)                                               |
-| -------------------- | ------------------------------------------------------- |
-| Lab Manuals / Slides | Andrew Connell (Microsoft MVP, Voitanos) @andrewconnell |
-| Sponsor / Support    | Vesa Juvonen (Microsoft) @VesaJuvonen                   |
+|        Roles         |                                       Author(s)                                       |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| Lab Manuals / Slides | Andrew Connell (Microsoft MVP, Voitanos) [@andrewconnell](//github.com/andrewconnell) |
+| QA                   | Rob Windsor (Microsoft MVP, PAIT Group) [@rob-windsor](//github.com/rob-windsor)      |
+| Sponsor / Support    | Vesa Juvonen (Microsoft) [@VesaJuvonen](//github.com/VesaJuvonen)                     |
 
 ## Version history
 
-| Version | Date           | Comments                         |
+| Version |      Date      |             Comments             |
 | ------- | -------------- | -------------------------------- |
+| 1.2     | June 11, 2019  | FY2019Q4 content refresh         |
 | 1.1     | March 13, 2019 | Rewritten to use latest guidance |
 | 1.0     | ~February 2017 | Initial release                  |
 
