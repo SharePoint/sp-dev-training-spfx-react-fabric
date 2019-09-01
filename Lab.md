@@ -23,6 +23,8 @@ To complete this lab, you need the following:
 
 In this exercise you will create a SharePoint Framework client-side web part that leverages the React web framework.
 
+> NOTE: The instructions below assume you are using v1.9.1 of the SharePoint Framework Yeoman generator.
+
 1. Open a command prompt and change to the folder where you want to create the project.
 1. Run the SharePoint Yeoman generator by executing the following command:
 
