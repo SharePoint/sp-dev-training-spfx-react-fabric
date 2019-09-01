@@ -15,7 +15,7 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
     { id: 2, title: 'blue' },
     { id: 3, title: 'green' }
   ];
-
+  
   public render(): React.ReactElement<IReactWebPartDemoProps> {
     return (
       <div className={ styles.reactWebPartDemo }>
