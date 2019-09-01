@@ -22,8 +22,8 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
   constructor(props: IReactWebPartDemoProps) {
     super(props);
     this.state = { colors: [] };
-  }  
-
+  }
+  
   public render(): React.ReactElement<IReactWebPartDemoProps> {
     return (
       <div className={ styles.reactWebPartDemo }>
@@ -31,8 +31,7 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
           <div className={ styles.row }>
             <div className={ styles.column }>
               <span className={ styles.title }>Welcome to SharePoint + React!</span>
-              <ColorList colors={ this.state.colors }
-                onRemoveColor={ this._removeColor }/>
+              <ColorList colors={ this.state.colors } onRemoveColor={ this._removeColor }/>
             </div>
           </div>
         </div>
@@ -59,17 +58,17 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
           }
         });
     });
-  }  
+  }
 
   public componentDidMount(): void {
     this.getColorsFromSpList()
       .then((spListItemColors: IColor[]) => {
         this.setState({ colors: spListItemColors });
       });
-  }  
+  }
 
   private _removeColor = (colorToRemove: IColor): void => {
     const newColors = this.state.colors.filter(color => color != colorToRemove);
     this.setState({ colors: newColors });
-  }  
+  }
 }
