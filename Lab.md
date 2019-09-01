@@ -422,8 +422,7 @@ In this exercise, you will update the existing React-based SPFx web part to make
         When this event occurs (something you will implement later in this exercise), it will run our handler. Do this by updating the `<ColorList>` control reference in the `render()` method:
 
         ```tsx
-        <ColorList colors={ this.state.colors }
-                    onRemoveColor={ this._removeColor }/>
+        <ColorList colors={ this.state.colors } onRemoveColor={ this._removeColor }/>
         ```
 
     1. Add the following method ot the **ReactWebPartDemo** class to implement the event handler. This will create a new collection of colors that include all the original colors, except the one included in the `onRemoveColor` callback:
