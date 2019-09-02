@@ -28,11 +28,12 @@ This module has been recorded and is available in the SharePoint Development You
 
 ## Version history
 
-| Version |      Date      |             Comments             |
-| ------- | -------------- | -------------------------------- |
-| 1.2     | June 11, 2019  | FY2019Q4 content refresh         |
-| 1.1     | March 13, 2019 | Rewritten to use latest guidance |
-| 1.0     | ~February 2017 | Initial release                  |
+| Version |       Date        |             Comments             |
+| ------- | ----------------- | -------------------------------- |
+| 1.3     | September 2, 2019 | 2020Q1 content refresh           |
+| 1.2     | June 11, 2019     | FY2019Q4 content refresh         |
+| 1.1     | March 13, 2019    | Rewritten to use latest guidance |
+| 1.0     | ~February 2017    | Initial release                  |
 
 ## Disclaimer
 
