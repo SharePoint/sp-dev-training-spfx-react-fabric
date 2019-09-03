@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import {
+  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-property-pane';
+} from '@microsoft/sp-webpart-base';
 
 import * as strings from 'ReactWebPartDemoWebPartStrings';
 import ReactWebPartDemo from './components/ReactWebPartDemo';
