@@ -31,7 +31,7 @@ In this demo you will create a SharePoint Framework client-side web part that le
     gulp serve
     ```
 
-1. The SharePoint Framework's gulp **serve** task will build the project, start a local web server and launch a browser open to the SharePoint Workbench:
+1. The SharePoint Framework's gulp **serve** task will build the project, start a local web server, and launch a browser open to the SharePoint Workbench:
 
     ![Screenshot of the SharePoint Workbench](../../Images/ex01-testing-01.png)
 
@@ -51,11 +51,11 @@ Before modifying the web part code, take a minute to see how this project differ
 
 1. Open the **package.json** file in the root of the project
 
-    Notice the presence of a few extra packages in the `dependencies` section. The `react` & `react-dom` packages contain the core React web framework and the bridge between React & the DOM while `@types/react` & `@types/react-dom` contain the TypeScript type declarations for the libraries.
+    Notice the presence of a few extra packages in the `dependencies` section. The `react` & `react-dom` packages contain the core React web framework and the bridge between React amd the DOM, while `@types/react` & `@types/react-dom` contain the TypeScript type declarations for the libraries.
 
 1. Open the web part in the **./src/webparts/reactWebPartDemo/ReactWebPartDemoWebPart.ts** file.
 
-    Notice the main difference in this web part from one that does not leverage the React Framework is in the `render()` method. Instead of writing HTML out, it first creates a new React component and then uses the `ReactDom.render()` method to render the component into the `div` for the web part.
+    The main difference between this web part and one that does not leverage the React Framework is in the `render()` method. Instead of writing HTML out, it first creates a new React component and then uses the `ReactDom.render()` method to render the component into the `div` for the web part.
 
     The React component that is created is the **ReactWebPartDemo**.
 
