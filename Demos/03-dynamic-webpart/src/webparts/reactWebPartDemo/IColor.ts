@@ -2,6 +2,6 @@
 // Licensed under the MIT license.
 
 export interface IColor {
-    id: number;
-    title: string;
+  id: number;
+  title: string;
 }

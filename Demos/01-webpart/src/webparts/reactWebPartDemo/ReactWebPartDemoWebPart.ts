@@ -2,10 +2,10 @@ import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import {
-  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
+} from '@microsoft/sp-property-pane';
+import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'ReactWebPartDemoWebPartStrings';
 import ReactWebPartDemo from './components/ReactWebPartDemo';
@@ -15,10 +15,10 @@ export interface IReactWebPartDemoWebPartProps {
   description: string;
 }
 
-export default class ReactWebPartDemoWebPart extends BaseClientSideWebPart<IReactWebPartDemoWebPartProps> {
+export default class ReactWebPartDemoWebPart extends BaseClientSideWebPart <IReactWebPartDemoWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IReactWebPartDemoProps > = React.createElement(
+    const element: React.ReactElement<IReactWebPartDemoProps> = React.createElement(
       ReactWebPartDemo,
       {
         description: this.properties.description

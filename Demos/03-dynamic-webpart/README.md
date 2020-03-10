@@ -173,7 +173,7 @@ In this demo, you will update the existing React-based SPFx web part to make it 
 
         ![Screenshot of running React web part](../../Images/ex02-testing-01.png)
 
-    1. Select the **delete** button for one of the colors. Notice the color is removed from the list.
+    1. Select the **delete** button for one of the colors. Notice the color is removed from the set of colors displayed in the web part.
 
         That is because selecting the button raised an event on the **ColorList** component. The **ReactWebPartDemo** component handles this event by removing the color from the existing collection of colors in the current state and then sets this new collection on the state.
 
