@@ -15,14 +15,14 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
     { id: 2, title: 'blue' },
     { id: 3, title: 'green' }
   ];
-  
+
   public render(): React.ReactElement<IReactWebPartDemoProps> {
     return (
-      <div className={ styles.reactWebPartDemo }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint + React!</span>
+      <div className={styles.reactWebPartDemo}>
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <span className={styles.title}>Welcome to SharePoint + React!</span>
               <ColorList colors={this._colors} />
             </div>
           </div>

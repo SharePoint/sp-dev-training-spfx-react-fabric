@@ -13,25 +13,25 @@ import { IReactWebPartDemoState } from './IReactWebPartDemoState';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 
 export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoProps, IReactWebPartDemoState> {
+  constructor(props: IReactWebPartDemoProps) {
+    super(props);
+    this.state = { colors: [] };
+  }
+
   private _colors: IColor[] = [
     { id: 1, title: 'red' },
     { id: 2, title: 'blue' },
     { id: 3, title: 'green' }
   ];
 
-  constructor(props: IReactWebPartDemoProps) {
-    super(props);
-    this.state = { colors: [] };
-  }
-  
   public render(): React.ReactElement<IReactWebPartDemoProps> {
     return (
-      <div className={ styles.reactWebPartDemo }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint + React!</span>
-              <ColorList colors={ this.state.colors } onRemoveColor={ this._removeColor }/>
+      <div className={styles.reactWebPartDemo}>
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <span className={styles.title}>Welcome to SharePoint + React!</span>
+              <ColorList colors={this.state.colors} onRemoveColor={this._removeColor} />
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoP
               id: jsonResponse.value[index].Id,
               title: jsonResponse.value[index].Title
             });
-  
+
             resolve(spListItemColors);
           }
         });
