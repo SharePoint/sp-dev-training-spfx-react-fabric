@@ -15,14 +15,12 @@ import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 export default class ReactWebPartDemo extends React.Component<IReactWebPartDemoProps, IReactWebPartDemoState> {
   constructor(props: IReactWebPartDemoProps) {
     super(props);
-    this.state = { colors: [] };
+    this.state = { colors: [
+      { id: 1, title: 'red' },
+      { id: 2, title: 'blue' },
+      { id: 3, title: 'green' }
+    ]};
   }
-
-  private _colors: IColor[] = [
-    { id: 1, title: 'red' },
-    { id: 2, title: 'blue' },
-    { id: 3, title: 'green' }
-  ];
 
   public render(): React.ReactElement<IReactWebPartDemoProps> {
     return (
